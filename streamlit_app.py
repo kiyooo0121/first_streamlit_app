@@ -67,7 +67,7 @@ streamlit.stop()
 def insert_row_snowflake(new_fruit):
   with my_cnx.cursor() as mycur:
     my_cur.execute("insert into fruit_load_list values ('from streamlit')")
-    retuen streamlit.write('Thanks for adding {}  '.format(new_fruit))
+    return streamlit.write('Thanks for adding {}  '.format(new_fruit))
 
 #     streamlit.header("What fruits would you like to add?")
 
