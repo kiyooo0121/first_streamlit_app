@@ -1,5 +1,3 @@
-$pip install --upgrade pip
-
 import streamlit
 import pandas
 import requests
