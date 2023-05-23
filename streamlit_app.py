@@ -54,11 +54,11 @@ def get_fruit_load_list():
       
 
       
-# ADD a button to load the fruita
-if streamlit.button("Get Fruit Load List"):
-  my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-  my_data_rows = get_fruit_load_list()
-  streamlit.dataframe(my_data_rows)
+# # ADD a button to load the fruita
+# if streamlit.button("Get Fruit Load List"):
+#   my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+#   my_data_rows = get_fruit_load_list()
+#   streamlit.dataframe(my_data_rows)
 
 # don't run anything past while we troubleshoot
 streamlit.stop()
